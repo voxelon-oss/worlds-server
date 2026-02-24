@@ -1,0 +1,14 @@
+name = "worlds-server"
+main = "src/index.js"
+compatibility_date = "2023-12-01"
+
+[observability]
+enabled = false
+
+[[durable_objects.bindings]]
+name = "GAME"
+class_name = "GameRoom"
+
+[[kv_namespaces]]
+binding = "USERS"
+id = "a0a5eb82af03416cb46c9352e0fdcb90"
